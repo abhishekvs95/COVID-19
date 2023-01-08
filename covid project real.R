@@ -1,4 +1,9 @@
-          ##LIBRARIES#
+
+#to download dataset
+download.file('https://covid.ourworldindata.org/data/owid-covid-data.csv', destfile = 'owid-covid-data.csv')
+
+
+##LIBRARIES#
 install.packages("car")
 library(dplyr)
 library(ggplot2)
