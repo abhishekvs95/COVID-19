@@ -14,6 +14,7 @@ The focus of this study is to do an analysis on Asian countries since they have 
 
 The data was gathered from Our World In Data (OWID) and can be accessed from GitHub through the link https://github.com/owid/covid-19-data/tree/master/public/data. The data is collected and collated by OWID through various sources such as COVID data repository of John Hopkins University (JHU), United Nations, World Bank and Blavatnik School of Government. The dataset includes country wise data that is periodically updated with information on several parameters. 
 
+Table 1: Variable description
 <img width="524" alt="COVID data variable description" src="https://github.com/abhishekvs95/COVID-19/assets/122197528/fcc77b0f-6996-48db-9372-3ff0ab17ba09">
 
 R packages used in the analysis are ggpubr, tidyverse, hmisc and corrplot. tidyverse helps to clean the dataset and visualise it better. Tidyverse contains packages such as ggplot2, dplyr. dplyr package helps to handle data easily through its select, filter, mutate, summarise functions. ggplot2 is a Grammar of Graphics based plotting package that helps in visualisation. hmisc package is used for some data analysis such as the describe function which is highly useful for showing statistical description of dataset. Corrplot package is used for plotting the correlation matrix plot and ggpubr is used for displaying multiple plots.
@@ -23,3 +24,24 @@ After loading the dataset, it is filtered for continent Asia. The function uniqu
 For creating a multiple regression model, a new dataset was created by choosing the variables that were required for analysis. These include location, total cases, total deaths, population, GDP per capita, cardiovascular death rate, diabetes prevalence, female and male smokers, hospital beds per thousand, life expectancy, total deaths per million, stringency index and HDI. The function which() and is.na() was used to find NA values. Countries such as North Korea, Northern Cyprus, Turkmenistan, Taiwan and so on were eliminated due to lack of data and poor update frequency. For the rest of the dataset, NA values were filled using respective mean values. 
 
 Then for all variables, histograms were plotted to see if the data is skewed or not and logarithmic transformation was done where necessary. Then a correlation test was done on the variables and correlation matrix was plotted. After this, a multiple linear regression test was done by taking log of total deaths as dependent variable and GDP per capita, female and male smokers, population, hospital beds per thousand, HDI, cardiovascular death rate, stringency index as independent variables.
+
+3. RESULTS AND DISCUSSION
+
+India, Indonesia, Iran, Turkey and Philippines had very large number of fatalities. This can also be inferred from the plot showing trend of total deaths in six countries that were affected the most in case of fatalities. The fatality in India is shown to be much higher, more than 3 times the fatality of second most affected country, Indonesia.
+
+Table 2: COVID-19 deaths
+<img width="462" alt="covid death and log" src="https://github.com/abhishekvs95/COVID-19/assets/122197528/f89ecfa1-0a9b-4499-99eb-f7599027b03b">
+
+ 4.1 ANALYSING TRENDS OF STRINGENCY INDEX AND RISE IN NEW CASES
+
+Figure.1 Map of Asia highlighting COVID mortalities
+
+![image](https://github.com/abhishekvs95/COVID-19/assets/122197528/3c9e9737-3bd5-4471-bee3-c34290ad5b8c)
+
+ 
+Figure.2 Trend showing total deaths
+ 
+
+
+
+From observing Figure 2, India and Indonesia had a considerable spike in fatalities during the second wave of COVID 19. This is consistent with studies that indicate that these countries started reopening their economies before they could observe a considerable decline in new cases (Furceri et al., 2021)
