@@ -14,6 +14,7 @@ The focus of this study is to do an analysis on Asian countries since they have 
 
 The data was gathered from Our World In Data (OWID) and can be accessed from GitHub through the link https://github.com/owid/covid-19-data/tree/master/public/data. The data is collected and collated by OWID through various sources such as COVID data repository of John Hopkins University (JHU), United Nations, World Bank and Blavatnik School of Government. The dataset includes country wise data that is periodically updated with information on several parameters. 
 
+<img width="524" alt="COVID data variable description" src="https://github.com/abhishekvs95/COVID-19/assets/122197528/fcc77b0f-6996-48db-9372-3ff0ab17ba09">
 
 R packages used in the analysis are ggpubr, tidyverse, hmisc and corrplot. tidyverse helps to clean the dataset and visualise it better. Tidyverse contains packages such as ggplot2, dplyr. dplyr package helps to handle data easily through its select, filter, mutate, summarise functions. ggplot2 is a Grammar of Graphics based plotting package that helps in visualisation. hmisc package is used for some data analysis such as the describe function which is highly useful for showing statistical description of dataset. Corrplot package is used for plotting the correlation matrix plot and ggpubr is used for displaying multiple plots.
 
