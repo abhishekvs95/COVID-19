@@ -1,3 +1,7 @@
+You can view the .R file for the code. The below is a report written to interpret the results of the analysis.
+
+EFFECT OF COVID-19 ON ASIAN COUNTRIES
+
 1. INTRODUCTION
 
 COVID 19 pandemic is an ongoing pandemic start started around December 2019 and began to spread across the world ever since (Khanna et al., 2020). The disease is contagious and is primarily transmitted through respiratory system (Ciotti et al., 2020). The pandemic had a global impact and all nations, be it developed or developing, was affected by this.
